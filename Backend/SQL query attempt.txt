@@ -1,0 +1,1 @@
+SELECT first_name, last_name FROM customer_table INNER JOIN orders_table ON customer_table.id = orders_table.customer_id INNER JOIN order_items_table ON orders_table.id = order_items_table.order_id INNER JOIN products_table ON order_items_table.product_id = product_table.id WHERE order_date = "2023" AND first_name COUNT > 5
